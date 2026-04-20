@@ -13,3 +13,11 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+function cambiarIdioma(idioma) {
+  const elementos = document.querySelectorAll("[data-es]");
+
+  elementos.forEach(el => {
+    el.textContent = el.getAttribute(`data-${idioma}`);
+  });
+}
