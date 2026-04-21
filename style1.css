@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+  padding-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* LANG BUTTONS */
+.lang {
+  position: absolute;
+  right: 20px;
+}
+
+.lang button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
