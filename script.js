@@ -65,12 +65,24 @@ document.querySelectorAll(".lang-switch button").forEach(btn => {
             const el = document.querySelector("." + key);
             if (el) el.textContent = translations[lang][key];
         }
-        // Cambiar link del About Me según idioma
+       // Cambiar link del About Me según idioma
         const aboutLink = document.getElementById("about-link");
-        if (lang === "en") aboutLink.href = "about.html";
-        if (lang === "fr") aboutLink.href = "about-fr.html";
-        if (lang === "es") aboutLink.href = "about-es.html";
-         }
+        if (aboutLink) {
+            if (lang === "en") aboutLink.href = "about.html";
+            if (lang === "fr") aboutLink.href = "about-fr.html";
+            if (lang === "es") aboutLink.href = "about-es.html";
+        }
+
+        // Cambiar link del Contact según idioma
+        const contactLink = document.getElementById("contact-link");
+        if (contactLink) {
+            if (lang === "en") contactLink.href = "contact.html";
+            if (lang === "fr") contactLink.href = "contact-fr.html";
+            if (lang === "es") contactLink.href = "contact-es.html";
+        }
+
+    });
+});
 
            });
 });
