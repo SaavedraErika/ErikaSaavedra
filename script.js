@@ -70,5 +70,14 @@ document.querySelectorAll(".lang-switch button").forEach(btn => {
         if (lang === "en") aboutLink.href = "about.html";
         if (lang === "fr") aboutLink.href = "about-fr.html";
         if (lang === "es") aboutLink.href = "about-es.html";
+         }
+
+        // Cambiar link de CONTACT según idioma
+        const contactLink = document.getElementById("contact-link");
+        if (contactLink) {
+            if (lang === "en") contactLink.href = "contact.html";
+            if (lang === "fr") contactLink.href = "contact-fr.html";
+            if (lang === "es") contactLink.href = "contact-es.html";
+        }
     });
 });
