@@ -58,14 +58,20 @@ const translations = {
     }
 };
 
+
+// FIXED VERSION — WORKS 100%
 document.querySelectorAll(".lang-switch button").forEach(btn => {
     btn.addEventListener("click", () => {
+
         const lang = btn.dataset.lang;
+
+        // Cambiar textos
         for (const key in translations[lang]) {
             const el = document.querySelector("." + key);
             if (el) el.textContent = translations[lang][key];
         }
-       // Cambiar link del About Me según idioma
+
+        // Cambiar link del About Me según idioma
         const aboutLink = document.getElementById("about-link");
         if (aboutLink) {
             if (lang === "en") aboutLink.href = "about.html";
@@ -82,7 +88,4 @@ document.querySelectorAll(".lang-switch button").forEach(btn => {
         }
 
     });
-});
-
-           });
 });
