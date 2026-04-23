@@ -84,6 +84,32 @@ nav a {
     font-size: 22px;
     margin-top: 10px;
 }
+.about-page {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 900px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
 
 /* PROJECTS */
 .projects {
