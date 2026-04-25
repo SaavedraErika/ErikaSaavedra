@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    verflow: hidden; /* IMPORTANTE */
 }
 .hero-content {
     text-align: center;
@@ -43,6 +44,7 @@ body {
     inset: 0;
     background: rgba(0,0,0,0.45);
     z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -87,9 +89,10 @@ nav a {
 }
 
 /* PROJECTS */
+
 .projects {
-    padding: 80px 40px;
-    text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 .projects h2 {
