@@ -54,28 +54,26 @@ nav a {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    z-index:2;
 }
 
 .name {
     font-family: 'Pacifico', cursive;
-    font-size: 80px;
+    font-size: 46px;
     color: #ffeb3b;
     margin: 0;
 }
