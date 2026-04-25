@@ -26,25 +26,31 @@ body {
 /* NAVBAR */
 nav {
     width: 100%;
-    padding: 20px;
+    padding: 14px 0;
     position: fixed;
     top: 0;
-    background-color: rgba(0,0,0,0.3);
-    z-index: 10;
-}
+    z-index: 20;
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 0;
+    /* GLASSMORPHISM */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* Suaviza la transición al hacer scroll */
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
 }
 
 /* HERO SECTION */
